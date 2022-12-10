@@ -1,0 +1,46 @@
+﻿@model CalculatorViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="text-center">Calculator Online</h1>
+<p class="text-center text-muted">Web Application</p>
+
+<form asp-action="Index" method="post">
+    <div class="shadow">
+        <div class="input-group bg-transparent">
+            <label class="form-control bg-green" asp-for="FirstOperand">
+                <span>1st Operand:</span>
+                <input class="form-control" type="text" asp-for="FirstOperand">
+            </label>
+        </div>
+        <div class="input-group bg-transparent">
+            <label class="form-control bg-green" asp-for="SecondOperand">
+                <span>2nd Operand:</span>
+                <input class="form-control" type="text" asp-for="SecondOperand">
+            </label>
+        </div>
+    </div>
+    <div class="input-group row m-1">
+        <div class="col-1">
+            <input class="btn bg-blue shadow px-1 text-light" name="command" type="submit" value="+">
+        </div>
+        <div class="col-1">
+            <input class="btn bg-blue shadow px-1 text-light" name="command" type="submit" value="-">
+        </div>
+        <div class="col-1">
+            <input class="btn bg-blue shadow px-1 text-light" name="command" type="submit" value="x">
+        </div>
+        <div class="col-1">
+            <input class="btn bg-blue shadow px-1 text-light" name="command" type="submit" value="÷">
+        </div>
+        <div class="col-7"></div>
+        <div class="col-1">
+            <input class="btn bg-blue shadow px-1 text-light" name="command" type="submit" value="C">
+        </div>
+    </div>
+</form>
+
+<div class="shadow bg-green mt-5 p-2">
+    <h3>Result: <span>@(Model?.Result ?? 0)</span></h3>
+</div>
