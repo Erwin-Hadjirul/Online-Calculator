@@ -1,7 +1,6 @@
 # ![icon](wwwroot/favicon.ico) Calculator Online
 
 ![year](https://img.shields.io/badge/year-2022-blue) ![unfinished](https://img.shields.io/badge/unfinished-true-orange) ![developer-level](https://img.shields.io/badge/developer--level-beginner-yellow)
-<!-- Unfinished -->
 
 The idea behind the web app is to create a __ONE (1)__ Application for all kind of Calculator existed in this world.
 
